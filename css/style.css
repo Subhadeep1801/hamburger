@@ -1,0 +1,76 @@
+:root{
+    --primary-color: rgb(13, 110, 139, 0.75);
+    --secondary-color: rgba(161, 103, 35, 0.85);
+    --overlay-color: rgba(23, 43, 59, 0.85);
+    --menu-speed: 0.75;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 20px;
+    line-height: 1.4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.welcome{
+    max-width: 100vh;
+    margin: auto;
+    overflow: hidden;
+    padding: 4rem;
+}
+
+#home{
+    background-color: var(--primary-color);
+    color: white;
+    height: 100vh;
+    position: relative;
+}
+
+#home:before{
+    content: "";
+    background: url("../img/Download\ the\ Real\ iOS\ 11\ Wallpaper\ for\ iPhone.png") no-repeat center center/cover ;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#home .welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.welcome h1{
+    font-size: 3rem;
+}
+
+.welcome p{
+    max-width: 860px;
+}
+
+.btn{
+    display: inline-block;
+    border: none;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px ;
+    margin-top:20px ;
+    transition: all 1s ease-in-out;
+}
+
+.btn:hover{
+    opacity: 0.7;
+
+}
